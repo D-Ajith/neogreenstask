@@ -135,7 +135,7 @@ export default function BenefitsSection() {
    <section className="relative w-full bg-[#FCFBF6] flex justify-center items-start px-4 md:px-8 py-16 md:py-24 overflow-hidden">
     
       <img 
-        src="../src/assets/Vector 6.png" 
+        src="./Vector 6.png" 
         alt="" 
         className="absolute top-0 left-0 w-full h-auto object-cover opacity-10 pointer-events-none z-0"
       />

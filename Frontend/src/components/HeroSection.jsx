@@ -44,7 +44,7 @@ function Herosection() {
           
             <div className="absolute inset-0 flex items-center justify-center -right-20">
               <img 
-                src="../src/assets/Vector 6.png"
+                src="./Vector 6.png"
                 alt="Decorative background" 
                 className="w-full h-full max-w-2xl object-contain opacity-70"
               />

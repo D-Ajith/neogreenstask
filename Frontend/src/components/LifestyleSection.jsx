@@ -7,7 +7,7 @@ function LifestyleSection() {
         <div className="bg-[#3A4F51] rounded-xl md:rounded-2xl shadow-xl overflow-hidden grid grid-cols-1 md:grid-cols-2 relative">
           
           <img 
-            src="../src/assets/Vector 6.png" 
+            src="./Vector 6.png" 
             alt="" 
             className="absolute top-0 left-0 w-auto h-full object-cover opacity-40 pointer-events-none z-0"
           />

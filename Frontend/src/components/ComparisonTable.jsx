@@ -42,7 +42,7 @@ function ComparisonTable() {
     <div className="w-full bg-[#F9F9F0] py-8 md:py-12 lg:py-16 px-4 md:px-6 relative overflow-hidden">
     
    <img
-  src="../src/assets/Vector 6.png"
+  src="./Vector 6.png"
   alt=""
   className="absolute bottom-0 right-0 w-[100%] md:w-[50%] lg:w-[45%] h-auto object-contain opacity-10 pointer-events-none z-0"
 />

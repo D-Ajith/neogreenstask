@@ -12,7 +12,7 @@ function Footer() {
           <footer className="bg-[#3A4F51] w-full py-8 md:py-10 lg:py-12 relative overflow-hidden">
       
       <img 
-        src="../src/assets/Vector 6.png" 
+        src="./Vector 6.png" 
         alt="" 
         className="absolute top-0 left-0 w-auto h-full object-cover opacity-60 pointer-events-none"
       />

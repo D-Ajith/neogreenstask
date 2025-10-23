@@ -51,7 +51,7 @@ function Testimonials() {
     <section className="py-12 md:py-16 lg:py-20 bg-white w-full flex flex-col items-center overflow-hidden relative">
      
 <img 
-  src="../src/assets/Vector 6.png" 
+  src="./Vector 6.png" 
   alt="" 
   className="absolute bottom-0 left-0 w-[40%] md:w-[35%] lg:w-[40%] opacity-10 pointer-events-none object-contain translate-x-[-50%]"
 />
