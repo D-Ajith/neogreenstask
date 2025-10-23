@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  font-family: 'Roboto', sans-serif;
+}
+h1, h2, h3, .heading {
+  font-family: 'Montserrat', sans-serif;
+}
+html {
+  scroll-padding-top: 80px;
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  scroll-snap-align: start;
+}
