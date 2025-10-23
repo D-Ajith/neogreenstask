@@ -32,8 +32,8 @@ const ProductBenefitsSection = () => {
   return (
     <section className="w-full bg-[#E8E7D0] py-12 md:py-16 lg:py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-       
-        <div className="hidden sm:grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8 sm:gap-10 md:gap-12 lg:gap-8 xl:gap-12">
+
+        <div className="hidden lg:grid grid-cols-5 gap-8 xl:gap-12">
           {belowBenefits.map(({ id, img, description }) => (
             <div
               key={id}
@@ -43,12 +43,12 @@ const ProductBenefitsSection = () => {
                 <img
                   src={img}
                   alt={description}
-                  className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-24 lg:h-24 xl:w-28 xl:h-28 object-contain"
+                  className="w-24 h-24 xl:w-28 xl:h-28 object-contain"
                   draggable={false}
                 />
               </div>
               <p
-                className="text-[#3A4F51] text-sm sm:text-base md:text-lg lg:text-base xl:text-lg font-medium leading-snug max-w-[140px] sm:max-w-none"
+                className="text-[#3A4F51] text-base xl:text-lg font-medium leading-snug"
                 style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}
               >
                 {description}
@@ -56,9 +56,56 @@ const ProductBenefitsSection = () => {
             </div>
           ))}
         </div>
-      
+
+
+        <div className="hidden sm:flex lg:hidden flex-col items-center gap-12 md:gap-16">
+
+          <div className="flex justify-center gap-12 md:gap-16 w-full">
+            {belowBenefits.slice(0, 3).map(({ id, img, description }) => (
+              <div key={id} className="flex flex-col items-center text-center">
+                <div className="mb-3 md:mb-4">
+                  <img
+                    src={img}
+                    alt={description}
+                    className="w-24 h-24 md:w-28 md:h-28 object-contain"
+                    draggable={false}
+                  />
+                </div>
+                <p
+                  className="text-[#3A4F51] text-base md:text-lg font-medium leading-snug max-w-[160px]"
+                  style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}
+                >
+                  {description}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          <div className="flex justify-center gap-16 md:gap-20 w-full">
+            {belowBenefits.slice(3, 5).map(({ id, img, description }) => (
+              <div key={id} className="flex flex-col items-center text-center">
+                <div className="mb-3 md:mb-4">
+                  <img
+                    src={img}
+                    alt={description}
+                    className="w-24 h-24 md:w-28 md:h-28 object-contain"
+                    draggable={false}
+                  />
+                </div>
+                <p
+                  className="text-[#3A4F51] text-base md:text-lg font-medium leading-snug max-w-[160px]"
+                  style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}
+                >
+                  {description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+
         <div className="sm:hidden flex flex-col items-center gap-6">
-       
+
           <div className="flex w-full justify-center gap-8">
             {[belowBenefits[0], belowBenefits[1]].map(({ id, img, description }) => (
               <div key={id} className="flex flex-col items-center text-center">
@@ -76,7 +123,8 @@ const ProductBenefitsSection = () => {
               </div>
             ))}
           </div>
-          
+
+
           <div className="flex w-full justify-center gap-8">
             {[belowBenefits[2], belowBenefits[3]].map(({ id, img, description }) => (
               <div key={id} className="flex flex-col items-center text-center">
@@ -94,7 +142,8 @@ const ProductBenefitsSection = () => {
               </div>
             ))}
           </div>
-         
+
+
           <div className="flex w-full justify-center mt-2">
             <div className="flex flex-col items-center text-center">
               <div className="mb-2">

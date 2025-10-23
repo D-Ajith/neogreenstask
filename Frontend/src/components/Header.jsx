@@ -8,7 +8,7 @@ function Header() {
   const closeMenu = () => setMenuOpen(false);
 
   return (
-    <header className="w-full bg-[#3A4F51] fixed top-0 left-0 z-50">
+    <header className="w-full bg-[#2C4143] fixed top-0 left-0 z-50">
       <div className="w-full mx-auto flex items-center justify-between py-4 md:py-5 px-4 sm:px-6 md:px-10 lg:px-20 xl:px-32">
        
         <div className="flex items-center">
