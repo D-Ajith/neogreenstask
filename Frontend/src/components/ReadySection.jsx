@@ -27,7 +27,7 @@ const ReadySection = () => {
             </button>
           </div>
           <div className='relative w-full lg:w-1/2 flex justify-center order-1 lg:order-2'>
-            <div className='bg-[url("Bar2/ready-vec.svg")] bg-no-repeat bg-bottom bg-contain w-full max-w-sm sm:max-w-md lg:max-w-none lg:w-[500px] h-[200px] sm:h-[250px] lg:h-[200px]'>
+            <div className='bg-[url("/ready-vec.svg")] bg-no-repeat bg-bottom bg-contain w-full max-w-sm sm:max-w-md lg:max-w-none lg:w-[550px] h-[200px] sm:h-[250px] lg:h-[250px]'>
               <img 
                 src="https://neogreens.com/wp-content/uploads/2025/09/Frame-1-4.png" 
                 alt="NeoGreens product" 

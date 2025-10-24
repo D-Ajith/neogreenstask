@@ -46,6 +46,11 @@ function ComparisonTable() {
   alt=""
   className="absolute bottom-0 right-0 w-[100%] md:w-[50%] lg:w-[45%] h-auto object-contain opacity-10 pointer-events-none z-0"
 />
+  <img
+  src="./btn-vec.svg"
+  alt=""
+  className="absolute bottom-0 left-0 w-[100%] md:w-[60%] lg:w-[45%] h-auto object-contain opacity-30 pointer-events-none z-0"
+/>
       
       <div className="w-full max-w-5xl mx-auto relative z-10">
         <div className="overflow-x-auto rounded-xl md:rounded-2xl shadow-xl">

@@ -2,7 +2,7 @@ import React from "react";
 
 function Herosection() {
   return (
-    <section className="bg-[#2C4143] w-full min-h-screen flex items-center justify-center relative overflow-hidden">
+      <section className="bg-[#2C4143] w-full min-h-screen flex items-center justify-center relative overflow-hidden" style={{ backgroundImage: 'url("Vector%206.png")', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
       <div className="hidden md:block max-w-7xl w-full mx-auto px-6 lg:px-12 xl:px-20 py-8 lg:py-20 relative z-10">
         <div className="grid grid-cols-2 gap-8 lg:gap-16 items-center">
 
