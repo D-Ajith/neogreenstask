@@ -1,60 +1,44 @@
-import React from "react";
+import React from 'react'
 
-function ReadySection() {
+const ReadySection = () => {
   return (
-    <section className="w-full bg-[#F0EFE0] py-16 md:py-20 lg:py-24 flex items-center relative overflow-hidden">
-      <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[500px] h-[500px] lg:w-[600px] lg:h-[600px] hidden md:block pointer-events-none">
-        <svg className="w-full h-full opacity-25" viewBox="0 0 600 600">
-          <circle 
-            cx="300" 
-            cy="300" 
-            r="250" 
-            stroke="#D8D7C3" 
-            strokeWidth="35" 
-            fill="none"
-          />
-        </svg>
-      </div>
-      <div className="absolute left-0 top-0 text-[#E5E4D5] text-[12rem] lg:text-[16rem] font-bold leading-none opacity-40 pointer-events-none hidden md:block overflow-hidden" style={{ fontFamily: 'serif' }}>
-        YOU
-      </div>
-
-      <div className="max-w-7xl w-full mx-auto px-6 md:px-8 lg:px-12 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center">
-          <div className="flex flex-col items-center md:items-start text-center md:text-left">
-            <h2 className="text-[#3A4F51] font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-5 md:mb-6">
-              When You're Ready,<br />
+    <>
+    <div className="seven relative bg-[#EFECD6] min-h-[300px] mt-20 sm:mt-30 lg:mt-32">
+        <div className='max-w-6xl flex flex-col lg:flex-row items-center justify-between mx-auto h-full px-4 sm:px-6 lg:px-8 py-12 lg:py-16'>
+          <div className='text-center lg:text-left w-full lg:w-1/2 order-2 lg:order-1 mt-6 lg:mt-0'>
+            <h1 
+              style={{ fontFamily: "Playfair Display, serif", fontWeight: 600 }} 
+              className='text-2xl sm:text-3xl lg:text-[40px] leading-[1.3] sm:leading-[1.4] lg:leading-[52px] text-[#2C4143]'
+            >
+              When You're Ready,<br className='hidden sm:block'/> 
               NeoGreens is Here.
-            </h2>
-            
-            <p className="text-[#6B7378] text-base sm:text-lg md:text-xl mb-8 md:mb-10 max-w-lg">
+            </h1>
+            <p 
+              style={{ fontFamily: "Raleway, sans-serif", fontWeight: 500 }} 
+              className='text-base sm:text-lg lg:text-[18px] text-[#677071] leading-relaxed lg:leading-[27px] py-4 sm:py-5 lg:py-[24px] max-w-xl mx-auto lg:mx-0'
+            >
               One clean, simple habit to help you feel better every day.
             </p>
-            
-            <button className="bg-transparent border-2 border-[#B8BAAC] text-[#7A8082] py-3 px-10 md:py-3.5 md:px-12 rounded-full text-lg md:text-xl font-medium hover:bg-[#E8E7D8] transition-all">
+            <button 
+              style={{ fontFamily: "Raleway, sans-serif", fontWeight: 500 }} 
+              className='text-base sm:text-lg lg:text-[18px] leading-relaxed lg:leading-[27px] border border-[#677071]/60 text-[#677071]/40 px-6 py-3 sm:py-4 rounded-full hover:bg-[#677071] hover:text-white transition-colors duration-200'
+            >
               Coming Soon
             </button>
           </div>
-
-          <div className="relative flex items-center justify-center">
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="w-[280px] h-[280px] sm:w-[350px] sm:h-[350px] md:w-[400px] md:h-[400px] lg:w-[480px] lg:h-[480px] rounded-full border-[25px] md:border-[30px] border-[#E0DFCD] opacity-60"></div>
-            </div>
-
-            <div className="relative z-10 transform hover:scale-105 transition-transform duration-300">
-              <img
-                src="https://neogreens.com/wp-content/uploads/2025/09/Frame-1-4.png"
-                alt="NeoGreens Product"
-                className="w-[240px] sm:w-[300px] md:w-[360px] lg:w-[420px] drop-shadow-2xl"
-                draggable={false}
+          <div className='relative w-full lg:w-1/2 flex justify-center order-1 lg:order-2'>
+            <div className='bg-[url("Bar2/ready-vec.svg")] bg-no-repeat bg-bottom bg-contain w-full max-w-sm sm:max-w-md lg:max-w-none lg:w-[500px] h-[200px] sm:h-[250px] lg:h-[200px]'>
+              <img 
+                src="https://neogreens.com/wp-content/uploads/2025/09/Frame-1-4.png" 
+                alt="NeoGreens product" 
+                className='ml-20 lg:absolute lg:bottom-8 sm:bottom-6 lg:bottom-8 w-[280px] sm:w-[350px] lg:w-[500px] max-w-none'
               />
             </div>
           </div>
-
         </div>
       </div>
-    </section>
-  );
+    </>
+  )
 }
 
-export default ReadySection;
+export default ReadySection
